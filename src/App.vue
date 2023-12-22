@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { GlobalThemeOverrides } from 'naive-ui'
-// import useDialogTools from '@/core/tools/dialog'
 const themeOverrides: GlobalThemeOverrides = {
   common: {
     "fontFamily": "微软雅黑,Microsoft YaHei UI,Microsoft YaHei,PingFang SC,Helvetica Neue,Helvetica,Arial,sans-serif",

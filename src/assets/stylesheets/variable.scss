@@ -6,7 +6,7 @@ $success: #67c23a;
 $warning: #e6a23c;
 $error: #f56c6c;
 
-$gray_0: #1f2d3d;
+$gray_0: #1F2D3D;
 $gray_1: #324057;
 $gray_2: #475669;
 $gray_3: #8492A6;
@@ -18,6 +18,7 @@ $gray_8: #EFF2F7;
 $gray_9: #f2f7fc;
 
 html {
+  --base-bg: rgb(240, 242, 247);
   --primary-color: #{$primary};
 
   @for $i from 1 through 9 {

@@ -269,3 +269,42 @@ a.blue.bulge,
 span.blue.bulge {
   text-shadow: 2px 2px 2px var(--primary-opacity-3), -1px -1px var(--white-default);
 }
+
+.n-menu-item-content__arrow {
+  color: #ffffff90 !important;
+}
+
+.n-menu-item-content {
+
+  &-header {
+    color: #ffffff90 !important;
+
+    * {
+      color: #ffffff90 !important;
+    }
+  }
+
+  &--selected {
+    .n-menu-item-content-header {
+      color: #fff !important;
+    }
+  }
+}
+
+.n-menu .n-menu-item-content:not(.n-menu-item-content--disabled):hover {
+  * {
+    color: #fff !important;
+  }
+
+  &::before {
+    background: #00000040;
+  }
+}
+
+.n-menu .n-menu-item-content.n-menu-item-content--selected::before {
+  background: var(--primary-color);
+}
+
+.n-menu .n-menu-item-content.n-menu-item-content--selected:hover::before {
+  background: var(--primary-color) !important;
+}

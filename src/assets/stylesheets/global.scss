@@ -3,9 +3,16 @@
 @import './override.scss';
 
 body {
-  background: rgb(240, 242, 247);
+  background: var(--base-bg);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
+@font-face {
+  font-family: TITLE;
+  src: url(https://ethanwp.oss-cn-shenzhen.aliyuncs.com/blog/PangMenZhengDaoBiaoTiTi.woff2)
+}
 .somnia-tooltip {
   background: linear-gradient(0deg, rgba(255, 255, 255, .3), transparent .65em);
   box-shadow: 0 0 0 1px #00000080 inset, 0 0 0 2px var(--white-opacity-2) inset, 0 5px 10px #0006;
@@ -36,25 +43,4 @@ body {
 [v-placement="top-start"]>.n-popover-shared>.n-popover-arrow-wrapper .n-popover-arrow,
 [v-placement="bottom-start"]>.n-popover-shared>.n-popover-arrow-wrapper .n-popover-arrow {
   left: calc(var(--n-arrow-offset) - var(--v-offset-left) + 10px);
-}
-
-::-webkit-scrollbar {
-  height: 12px;
-  width: 12px
-}
-
-::-webkit-scrollbar-track {
-  background: none
-}
-
-::-webkit-scrollbar-thumb {
-  background-clip: content-box;
-  background-color: rgba(0, 0, 0, .25);
-  border: 4px solid transparent;
-  border-radius: 100px
-}
-
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-corner {
-  display: none
 }
