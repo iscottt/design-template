@@ -7,7 +7,7 @@
       <div class="logo" flex flex-center>
         <img src="/logo.svg" alt="logo" />
       </div>
-      <h2 font-italic pr-5>Naive UI后台管理系统</h2>
+      <h3 font-italic pr-5>Naive UI后台管理系统</h3>
     </div>
     <div class="right">
     </div>
@@ -18,7 +18,7 @@
   filter: drop-shadow(4px 4px 5px var(--primary-opacity-3)) drop-shadow(-4px -4px 2px #333);
 }
 
-h2 {
+h3 {
   font-size: 1.5em;
   font-family: TITLE;
   color: #eee;
